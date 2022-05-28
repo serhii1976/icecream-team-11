@@ -42,32 +42,27 @@
 }
 .icon-1::before {
   background-image: url(../images/advatages-icon-1.png);
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .icon-1::before {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/advatages-icon-1@2x.png);
   }
 }
+
 .icon-2::before {
   background-image: url(../images/advatages-icon-2.png);
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .icon-2::before {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/advatages-icon-2@2x.png);
   }
 }
 
 .icon-3::before {
   background-image: url(../images/advatages-icon-3.png);
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .icon-3::before {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/advatages-icon-3@2x.png);
   }
 }
