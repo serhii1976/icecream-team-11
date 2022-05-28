@@ -5,6 +5,11 @@
 @import './tags';
 @import './variables';
 @import "./hero-header";
+@import './hidden';
+@import './advantages';
 
+//breakpoints all
+@import './breakpoints';
 
-
+//components
+@import './components/header';
