@@ -1,176 +1,164 @@
-section{
-    padding-top: 80px;
-    padding-bottom: 20px;
+section {
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
-.products__title{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 140px;
-    width: 200px;
-    height: 36px;
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $red;
-}
-
-.products__label{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    width: 142px;
-    height: 21px;
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16; 
-    text-align: center;
-    text-transform: uppercase;
-    color: $pink;
+.products__title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+  width: 200px;
+  height: 36px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red;
 }
 
-.products__item{
-    margin-bottom: 140px;
-    
+.products__label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 142px;
+  height: 21px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: $pink;
 }
 
-.products__wrapper{
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    width: 280px;
-    height: 489px;  
-    border-radius: 24px;
-   
+.products__item {
+  margin-bottom: 140px;
 }
 
-.products__wrapper--fist{
-    background-color: $pinkBackG;
+.products__wrapper {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 489px;
+  border-radius: 24px;
 }
 
-.products__wrapper--second{
-    background-color: $brownBackG;
+.products__wrapper--fist {
+  background-color: $pinkBackG;
 }
 
-.products__wrapper--third{
-    background-color: $greenBackG;
+.products__wrapper--second {
+  background-color: $brownBackG;
 }
 
-.products__wrapper::before{
-    content: "";
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 280px;
-    height: 280px;
-    
+.products__wrapper--third {
+  background-color: $greenBackG;
 }
 
-.products__wrapper--fist::before{
-    content: "";
-    top: -140px;
-    background-image: url(../images/icecream-mobile.png), url(../images/icecream-mobile@x2.png);
-   
-    
+.products__wrapper::before {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
 }
 
-.products__wrapper--second::before{
-    content: "";
-    background-image: url(../images/icecoffee-mobile.png), url(../images/icecoffee-mobile@x2.png);
-    top: -140px;
-    
+.products__wrapper--fist::before {
+  content: '';
+  top: -140px;
+  background-image: url(../images/icecream-mobile.png),
+    url(../images/icecream-mobile@x2.png);
 }
 
-.products__wrapper--third::before{
-    content: "";
-    background-image: url(../images/milkshake-mobile.png), url(../images/milkshake-mobile@x2.png);
-    top: -140px;
-    
+.products__wrapper--second::before {
+  content: '';
+  background-image: url(../images/icecoffee-mobile.png),
+    url(../images/icecoffee-mobile@x2.png);
+  top: -140px;
 }
 
-.products__subtitle{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 70px;
-    width: 174px;
-    height: 23px;
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $white;
-    padding-top: 160px;
+.products__wrapper--third::before {
+  content: '';
+  background-image: url(../images/milkshake-mobile.png),
+    url(../images/milkshake-mobile@x2.png);
+  top: -140px;
 }
 
-.products__subtitle::after{
-    content: "";
-    width: 6px;
-    height: 6px;
-    // position: absolute;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    background-image: url(../images/icon/svg-all.svg#icon-ellipse);
-    background-color: $whiteBtnHoverBackG;
-    border-radius: 50%;
-
-    
+.products__subtitle {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  width: 174px;
+  height: 23px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+  padding-top: 160px;
 }
 
-
-
-
-.products__about{
-    width: 200px;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $white;
-    
+.products__subtitle::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  // position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-image: url(../images/icon/svg-all.svg#icon-ellipse);
+  background-color: $whiteBtnHoverBackG;
+  border-radius: 50%;
 }
 
-.products__description{
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: transparent;
-    border-radius: 50%;
-    
-
+.products__about {
+  width: 200px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white;
 }
 
-.products__btn-icon{ 
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    width: 12px;
-    height: 10px;
-    fill: $redBtnHoverBackG;
+.products__description {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: transparent;
+  border-radius: 50%;
+}
+
+.products__btn-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 12px;
+  height: 10px;
+  fill: $redBtnHoverBackG;
 }
