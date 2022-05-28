@@ -2,9 +2,6 @@ section{
     padding-top: 80px;
     padding-bottom: 20px;
 }
-
-
-
 .products__title{
     display: block;
     margin-left: auto;
@@ -51,8 +48,7 @@ section{
     width: 280px;
     height: 489px;  
     border-radius: 24px;
-    
-    
+   
 }
 
 .products__wrapper--fist{
@@ -104,6 +100,7 @@ section{
 }
 
 .products__subtitle{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
@@ -120,9 +117,29 @@ section{
     padding-top: 160px;
 }
 
+.products__subtitle::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    // position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-image: url(../images/icon/svg-all.svg#icon-ellipse);
+    background-color: $whiteBtnHoverBackG;
+    border-radius: 50%;
+
+    
+}
+
+
 
 
 .products__about{
+    width: 200px;
+    margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'DM Sans';
@@ -133,5 +150,27 @@ section{
     text-align: center;
     letter-spacing: 0.04em;
     color: $white;
-    width: 200px;
+    
+}
+
+.products__description{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: transparent;
+    border-radius: 50%;
+    
+
+}
+
+.products__btn-icon{ 
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    width: 12px;
+    height: 10px;
+    fill: $redBtnHoverBackG;
 }
