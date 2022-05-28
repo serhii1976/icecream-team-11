@@ -1,0 +1,48 @@
+.advantages {
+  background-color: $pinkLightBackG;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.advantage-list__item {
+  margin-bottom: 32px;
+  max-width: 230px;
+}
+.advantage-list__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red;
+  margin-bottom: 16px;
+}
+.advantage-list__title::before {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/bigecocow-mobile.png);
+  background-size: contain;
+  margin-bottom: 16px;
+}
+.advantage-list__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  /* or 20px */
+  color: $black;
+}
