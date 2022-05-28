@@ -1,25 +1,26 @@
 /*кнопка меню*/
 .menu-button {
   display: flex;
+
   align-items: center;
-  text-align: center;
-  width: 186px;
+  width: 209px;
   height: 44px;
 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 33px;
 
-  padding: 10px 43px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
+  /*padding: 10px 43px;*/
 
   border-radius: 22px;
   border: transparent;
 
   background-color: $white;
+
+  &__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__txt {
     margin-right: 14px;
@@ -35,7 +36,5 @@
   &__icon {
     width: 10px;
     height: 10px;
-
-    fill: $red;
   }
 }

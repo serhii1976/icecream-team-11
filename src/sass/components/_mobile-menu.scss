@@ -46,7 +46,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 58px 20px;
+    padding: 60px 20px;
     background-color: $pinkModalBackG;
   }
 
@@ -76,5 +76,5 @@
 
 .mobile-list__link:hover,
 .mobile-list__link:focus {
-  color: var(--secondary-txt-cl);
+  color: $red;
 }

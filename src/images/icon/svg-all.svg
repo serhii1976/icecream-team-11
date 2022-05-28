@@ -15,7 +15,7 @@
     <symbol id="icon-home" viewBox="0 0 32 32">
       <path fill="#d31342" style="fill:var(--color2, #d31342)" d="M31.6 15.44c.579-.536.523-1.363-.125-1.843L17.174 3.021a2.033 2.033 0 0 0-2.331.025l.006-.004L.5 14.162c-.637.491-.667 1.317-.069 1.84l.36.32c.595.523 1.56.587 2.152.136l1.072-.811v11.885c0 .728.701 1.317 1.563 1.317h5.592c.864 0 1.563-.587 1.563-1.317v-8.315h7.133v8.315c-.011.728.605 1.317 1.467 1.317h5.928c.861 0 1.56-.589 1.56-1.32V15.814l.664.491c.363.269 1.131.053 1.709-.485l.408-.379z"/>
     </symbol>
-    <symbol id="icon-icon-close-menu" viewBox="0 0 32 32">
+    <symbol id="icon-close-menu" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" style="stroke:var(--color2, #fff)" stroke-width="2" d="m2.52 2 26.96 28M2 29.48 30 2.52"/>
     </symbol>
     <symbol id="icon-telegram" viewBox="0 0 32 32">
