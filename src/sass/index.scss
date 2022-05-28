@@ -4,6 +4,7 @@
 @import './normalize';
 @import './tags';
 @import './variables';
+=======
 @import './mixins';
 
 // about section
@@ -17,3 +18,5 @@
 
 //components
 @import './components/header';
+@import './gallery';
+
