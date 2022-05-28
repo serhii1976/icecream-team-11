@@ -6,6 +6,19 @@
 @import './variables';
 @import './hidden';
 @import './products';
+// =======
+@import './mixins';
 
+// about section
+@import './about';
+@import "./hero-header";
+@import './hidden';
+@import './advantages';
 
+//breakpoints all
+@import './breakpoints';
+
+//components
+@import './components/header';
+@import './gallery';
 
