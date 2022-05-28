@@ -1,44 +1,48 @@
-@media screen and (max-width: $tabletSecondary) {
-  .header-button {
-    position: relative;
-    z-index: 50;
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
+.header-button {
+  position: relative;
+  z-index: 50;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
-  .header-button .header-button__menu {
+  & &__menu {
     display: block;
   }
 
-  .header-button .header-button__cross {
+  & &__cross {
     display: none;
   }
 
-  .header-button.is-active .header-button__menu {
+  &.is-active &__menu {
     display: none;
   }
 
-  .header-button.is-active .header-button__cross {
+  &.is-active &__cross {
     display: block;
-  }
-
-  .header-button__cross:hover,
-  .header-button__cross:focus {
-    fill: $red;
   }
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tabletSecondary) {
+  .header-button {
+    display: none;
+  }
+}
+
+.header-button__cross:hover,
+.header-button__cross:focus {
+  fill: $red;
+}
+
+@media screen and (min-width: $desktopSecondary) {
   .mobile-container {
     display: none;
   }
 }
 
-@media screen and (max-width: $tabletSecondary) {
+@media screen and (max-width: $desktopSecondary) {
   .mobile-container {
     position: fixed;
     z-index: 20;
@@ -73,10 +77,10 @@
     &:last-child {
       border-bottom: 1px solid $pinkLine;
     }
-  }
-}
 
-.mobile-list__link:hover,
-.mobile-list__link:focus {
-  color: $red;
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
 }
