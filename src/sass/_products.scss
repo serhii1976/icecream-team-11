@@ -1,8 +1,15 @@
+section{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+
 .products__title{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;
+    margin-bottom: 140px;
     width: 200px;
     height: 36px;
     font-family: 'Titan One';
@@ -31,33 +38,68 @@
     color: $pink;
 }
 
+.products__item{
+    margin-bottom: 140px;
+    
+}
 
 .products__wrapper{
-   
+    position: relative;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
     width: 280px;
-    height: 489px;
-    background-color: $pinkBackG;
+    height: 489px;  
     border-radius: 24px;
     
+    
+}
+
+.products__wrapper--fist{
+    background-color: $pinkBackG;
+}
+
+.products__wrapper--second{
+    background-color: $brownBackG;
+}
+
+.products__wrapper--third{
+    background-color: $greenBackG;
 }
 
 .products__wrapper::before{
     content: "";
     display: block;
-    align-items: center;
-    left: 20px;
-    top: 662px;
-    
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
-    background-image: url(../images/icecream-mobile.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 280px;
     height: 280px;
+    
+}
+
+.products__wrapper--fist::before{
+    content: "";
+    top: -140px;
+    background-image: url(../images/icecream-mobile.png), url(../images/icecream-mobile@x2.png);
+   
+    
+}
+
+.products__wrapper--second::before{
+    content: "";
+    background-image: url(../images/icecoffee-mobile.png), url(../images/icecoffee-mobile@x2.png);
+    top: -140px;
+    
+}
+
+.products__wrapper--third::before{
+    content: "";
+    background-image: url(../images/milkshake-mobile.png), url(../images/milkshake-mobile@x2.png);
+    top: -140px;
     
 }
 
@@ -75,7 +117,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $white;
+    padding-top: 160px;
 }
+
+
 
 .products__about{
     margin-left: auto;
@@ -88,4 +133,5 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $white;
+    width: 200px;
 }
