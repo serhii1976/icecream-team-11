@@ -1,0 +1,83 @@
+.footer-section {
+  padding-top: 48px;
+  background-color: #fff5f6;
+}
+.footer-container {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.socials__icon {
+  fill: #fea5bb;
+}
+
+.footer-text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.footer-logo {
+  font-family: 'Titan One';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.contacts-footer {
+  text-decoration: none;
+  display: block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #d82f58;
+  margin-bottom: 40px;
+  &__tel {
+    @include tablet {
+      color: #d82f58;
+    }
+  }
+}
+
+.footer-list {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 40px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: right;
+  &__item {
+    margin-right: 28.24px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.ice-cream-footer {
+  display: block;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  color: #907e82;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
