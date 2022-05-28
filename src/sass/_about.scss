@@ -3,13 +3,17 @@
     padding-bottom: 40px;
     background-image: url(../images/milksplash-mobile.png);
     background-repeat: no-repeat;
-    background-position: right 0 bottom 190px;
+    background-position: right 0 bottom 215px;
     background-color: $pinkLightBackG;
     background-size: contain;
     @include mq (retina){
     background-image: url(../images/milksplash-mobile@x2.png);
     }
     
+    &__container{
+        max-width: 320px;
+    }
+
     &__titles{
         text-align: center;
         width: 200px;
@@ -42,9 +46,9 @@
      }
 
      &__info{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
      }
 
      &__img-thumb{
