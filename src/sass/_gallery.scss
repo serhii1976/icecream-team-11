@@ -1,9 +1,13 @@
+.gallery {
+  background: linear-gradient($pinkLightBackG 40%, $white 40%);
+}
 .gallery__container {
   padding: 2vw 0;
 }
 .gallery__list {
+  width: calc(6 * (12.5vw + 5px));
+  margin: 0 auto;
   display: flex;
-  width: fit-content;
   flex-direction: column;
   flex-wrap: wrap;
   height: calc(37.5vw + 10px);
@@ -12,10 +16,6 @@
 .gallery__item {
   display: flex;
   align-items: flex-end;
-  &:hover .gallery__img {
-    width: 25vw;
-    height: 25vw;
-  }
 }
 .gallery__item:nth-child(odd) {
   align-items: flex-start;
@@ -36,9 +36,13 @@
   top: -2vw;
 }
 .gallery__img {
-  border-radius: 5px;
+  border-radius: 1.56vw;
   width: 12.5vw;
   height: 12.5vw;
   margin: 2.5px;
   transition: 250ms;
+  &:hover {
+    width: 20vw;
+    height: 20vw;
+  }
 }
