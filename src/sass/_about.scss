@@ -1,0 +1,112 @@
+.about-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../images/milksplash-mobile.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 215px;
+    background-color: $pinkLightBackG;
+    background-size: contain;
+    @include mq (retina){
+    background-image: url(../images/milksplash-mobile@x2.png);
+    }
+    
+    &__container{
+        max-width: 320px;
+    }
+
+    &__titles{
+        text-align: center;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__subtitle{
+        margin-bottom: 15px;
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $pink;
+    }
+    
+
+     &__title {
+        margin-bottom: 32px;
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $red;
+     }
+
+     &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+
+     &__img-thumb{
+         margin-bottom: 40px;
+     }
+
+    &__text {
+        margin-bottom: 30px;
+        font-family: 'DM Sans', sans-serif;
+        color: $black;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 162%;
+        width: 220px;
+    }
+
+    &__description{
+        display: block;
+        width: 220px;
+        margin-bottom: 15px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 162%;
+        color: $grey;
+    }
+    &__description.paragraph {
+        margin-bottom: 20px;
+    }
+
+    &__button{
+    display: flex;
+    background-color: $white;
+    padding: 14px 30px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: center;
+    min-width: 176px;
+    }
+
+    &__button-text{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $red;
+}   
+
+    &__button-icon{
+        fill: $red;
+        margin-left: 14px;
+    }
+
+
+
+}
+    
