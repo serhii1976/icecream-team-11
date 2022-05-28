@@ -12,7 +12,7 @@
 
 // about section
 @import './about';
-@import "./hero-header";
+@import './hero-header';
 @import './hidden';
 @import './advantages';
 
@@ -20,5 +20,7 @@
 @import './breakpoints';
 
 //components
+@import './components/mobile-menu';
+@import './components/btn-menu';
 @import './components/header';
 @import './gallery';
