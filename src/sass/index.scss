@@ -4,6 +4,10 @@
 @import './normalize';
 @import './tags';
 @import './variables';
+@import './mixins';
+
+// about section
+@import './about';
 @import "./hero-header";
 @import './hidden';
 @import './advantages';
