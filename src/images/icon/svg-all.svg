@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
   <symbol id="about-arrow" viewBox="0 0 26 32">
-    <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
+    <path fill="none"  style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
   </symbol>
     <symbol id="icon-btn-arrow" viewBox="0 0 32 32">
       <path d="M6.742 3.2 23.568 16 6.742 28.8"/>
