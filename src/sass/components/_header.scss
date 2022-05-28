@@ -1,0 +1,28 @@
+@import './mobile-menu';
+@import './btn-menu';
+
+/*Header*/
+.header {
+  position: fixed;
+  z-index: 2;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 60px;
+
+  background-color: #ffb8ca;
+
+  &__container {
+    padding: 8px 20px;
+  }
+
+  /*header навигация*/
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+}
