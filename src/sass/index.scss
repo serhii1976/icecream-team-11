@@ -4,7 +4,11 @@
 @import './normalize';
 @import './tags';
 @import './variables';
+@import './hidden';
+@import './products';
+// =======
 @import './mixins';
+@import './customer-reviews';
 
 // about section
 @import './about';
@@ -18,3 +22,5 @@
 //components
 @import './components/mobile-menu';
 @import './components/btn-menu';
+@import './components/header';
+@import './gallery';
