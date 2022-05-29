@@ -1,4 +1,8 @@
 @import './mixins';
+@import './contacts';
+@import './base';
+@import './reset';
+
 @import './common';
 @import './example';
 @import './container';
@@ -6,3 +10,23 @@
 @import './tags';
 @import './variables';
 @import './footer.scss';
+@import './hidden';
+@import './products';
+// =======
+@import './mixins';
+@import './customer-reviews';
+
+// about section
+@import './about';
+@import './hero-header';
+@import './hidden';
+@import './advantages';
+
+//breakpoints all
+@import './breakpoints';
+
+//components
+@import './components/mobile-menu';
+@import './components/btn-menu';
+// @import './components/header';
+@import './gallery';
