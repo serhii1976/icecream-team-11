@@ -2,24 +2,53 @@
   background-color: $pinkLightBackG;
   // padding-top: 40px;
   padding-bottom: 80px;
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+// .visually-hidden {
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   border: 0;
+//   padding: 0;
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   margin: -1px;
+// }
+.advantage-list {
+  @include tablet {
+    display: flex;
+    margin-left: -22px;
+
+    @include desktop {
+      margin-left: -150px;
+    }
+  }
 }
 .advantage-list__item {
   max-width: 230px;
+  @include tablet {
+    // max-width: 160px;
+    width: calc(100% / 3 - 22px);
+    margin-left: 22px;
+  }
+  @include desktop {
+    // max-width: 288px;
+    width: calc(100% / 3 - 150px);
+    margin-left: 150px;
+  }
 }
 .advantage-list__item:not(:last-child) {
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 .advantage-list__title {
   font-family: 'Titan One';
@@ -31,6 +60,14 @@
   text-transform: uppercase;
   color: $red;
   margin-bottom: 16px;
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 .advantage-list__item::before {
   display: block;
@@ -39,6 +76,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 36px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 .icon-1::before {
   background-image: url(../images/advatages-icon-1.png);
@@ -73,6 +116,10 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
-  /* or 20px */
+
   color: $black;
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
