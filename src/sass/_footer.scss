@@ -3,17 +3,17 @@
   background-color: #fff5f6;
   border-bottom: 1px solid #e1e1e1;
 }
-.footer-container {
-  // border-bottom: 1px solid #e1e1e1;
-}
 
 .socials__icon {
   fill: #fea5bb;
+  &:hover {
+    fill: #d41443;
+  }
 }
 
 .footer-text {
   font-family: 'Titan One';
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
@@ -81,6 +81,7 @@
   padding-bottom: 20px;
   background-color: #fff5f6;
 }
+
 
 // .footer-bottom {
 //   border-bottom: 1px solid #e1e1e1;
