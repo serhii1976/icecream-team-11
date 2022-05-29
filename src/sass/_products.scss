@@ -6,7 +6,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 140px;
+  padding-bottom: 140px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -18,6 +18,11 @@
 
   @include mq(tablet){ 
     font-size: 48px;
+}
+
+@include mq(desktop){ 
+    font-size: 58px;
+    padding-bottom: 261px;
 }
 
 
@@ -40,6 +45,11 @@
     font-size: 26px;
     line-height: 1.53;
 }
+
+@include mq(desktop){ 
+    font-size: 30px;
+    line-height: 1.13;
+}
   
 }
 
@@ -48,12 +58,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 16px;
-
-        &:last-child{
-            margin-right: 0;
-        }
+       
     }
+
+    
 }
 
 .products__item {
@@ -69,6 +77,9 @@
         margin-right: 0;
     }
 }
+@include mq(desktop){ 
+    margin-right: 32px;
+}
 }
 
 .products__wrapper {
@@ -83,6 +94,10 @@
   @include mq(tablet){ 
     width: 224px;
     height: 473px;
+}
+@include mq(desktop){ 
+    width: 395px;
+    height: 535px;
 }
 }
 
@@ -114,8 +129,12 @@
   @include mq(tablet){ 
     width: 224px;
     height: 224px;
-}
-
+    }
+    @include mq(desktop){ 
+    width: 394px;
+    height: 394px;
+    top: -255px;
+    }
 
 }
 
@@ -126,6 +145,22 @@
     @include mq(retina){
         background-image: url(../images/icecream-mobile@x2.png);
     }
+
+    @include mq(tablet){ 
+        background-image: url(../images/icecream-tablet.png);
+        @include mq(retina){
+            background-image: url(../images/icecream-tablet@x2.png);
+        }
+        
+    }
+
+    @include mq(desktop){ 
+        background-image: url(../images/icecream-desktop.png);
+        @include mq(retina){
+            background-image: url(../images/icecream-desktop@x2.png);
+        }
+        
+    }
     
 }
 
@@ -134,23 +169,52 @@
   background-image: url(../images/icecoffee-mobile.png);
   @include mq(retina){
     background-image: url(../images/icecoffee-mobile@x2.png);
+    }
+    @include mq(tablet){ 
+    background-image: url(../images/icecoffee-tablet.png);
+    @include mq(retina){
+        background-image: url(../images/icecoffee-tablet@x2.png);
+    }
+    
+    }
+    @include mq(desktop){ 
+    background-image: url(../images/icecoffee-desktop.png);
+    @include mq(retina){
+        background-image: url(../images/icecoffee-desktop@x2.png);
+    }
+    
 }
- 
  
 }
 
 .products__wrapper--third::before {
-  content: '';
-  background-image: url(../images/milkshake-mobile.png),
-    url(../images/milkshake-mobile@x2.png);
-  
+    content: '';
+    background-image: url(../images/milkshake-mobile.png);
+    @include mq(retina){
+      background-image: url(../images/milkshake-mobile@x2.png);
+    }
+    
+    @include mq(tablet){ 
+        background-image: url(../images/milkshake-tablet.png);
+        @include mq(retina){
+            background-image: url(../images/milkshake-tablet@x2.png);
+        }
+    }
+    
+     @include mq(desktop){ 
+         background-image: url(../images/milkshake-desktop.png);
+        @include mq(retina){
+            background-image: url(../images/milkshake-desktop@x2.png);
+            }
+    }
+
 }
 
 .products__subtitle {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   width: 174px;
   height: 23px;
   font-family: 'Titan One';
@@ -166,18 +230,21 @@
   @include mq(tablet){ 
     padding-top: 118px;
 }
+    @include mq(desktop){ 
+        padding-top: 165px;
+}
 }
 
 .products__subtitle::after {
   content: '';
-  background-image: url(../images/icon/svg-all.svg#icon-Ellipse);
-  position: absolute;
-  display: block;
-  width: 6px;
-  height: 6px;
-
+  background-image: url('../images/icon/dots_group.svg');
   
-  background-color: $whiteBtnHoverBackG;
+  display: block;
+  width: 26px;
+  height: 6px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
 
 }
 
@@ -197,18 +264,15 @@
 
   @include mq(tablet){ 
     width: 160px;
-}
+    }
+
+  @include mq(desktop){ 
+        width: 265px;
+        margin-bottom: 60px;
+    }
 
 }
 
-
-.product__wrapper--desc{
-    fill: $redBtnHoverBackG;
-    &:hover,
-    &:focus{
-        fill: $whiteBtnHoverBackG;
-        }
-}
 
 .products__description {
   width: 40px;
@@ -226,6 +290,7 @@
     &:hover,
     &:focus{
         background-color: $redBtnHoverBackG;
+
         }
 }
 
@@ -237,5 +302,11 @@
   align-items: center;
   width: 12px;
   height: 10px;
+ 
+  fill: $redBtnHoverBackG;
+  &:hover,
+  &:focus{
+      fill: $whiteBtnHoverBackG;
+      }
 
 }
