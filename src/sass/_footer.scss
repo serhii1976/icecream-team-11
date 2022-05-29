@@ -1,14 +1,23 @@
-.footer-section {
-  padding-top: 48px;
+.footer {
   background-color: #fff5f6;
+}
+
+.footer-section {
   border-bottom: 1px solid #e1e1e1;
 }
+
 .footer-container {
-  // border-bottom: 1px solid #e1e1e1;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .socials__icon {
   fill: #fea5bb;
+  &:hover {
+    fill: #d41443;
+  }
 }
 
 .footer-text {
@@ -18,6 +27,11 @@
   line-height: 1.16;
   text-transform: uppercase;
   color: #ffa5ba;
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
 }
 
 .footer-logo {
@@ -28,6 +42,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  @include tablet {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .contacts-footer {
@@ -44,6 +62,9 @@
   &__tel {
     color: #d82f58;
   }
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .footer-list {
@@ -53,6 +74,9 @@
   }
   a {
     text-decoration: none;
+  }
+  @include tablet {
+    margin-bottom: 12px;
   }
 }
 
@@ -64,6 +88,9 @@
     margin-bottom: 40px;
     &:last-child {
       margin-right: 0;
+    }
+    @include tablet {
+      margin-right: 30px;
     }
   }
 }
@@ -79,9 +106,12 @@
   color: #978689;
   padding-top: 16px;
   padding-bottom: 20px;
-  background-color: #fff5f6;
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 186%;
+    br {
+      content: '';
+    }
+  }
 }
-
-// .footer-bottom {
-//   border-bottom: 1px solid #e1e1e1;
-// }

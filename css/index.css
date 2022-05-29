@@ -31,6 +31,23 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
@@ -315,14 +332,26 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.footer-section {
-  padding-top: 48px;
+.footer {
   background-color: #fff5f6;
+}
+
+.footer-section {
   border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .socials__icon {
   fill: #fea5bb;
+}
+.socials__icon:hover {
+  fill: #d41443;
 }
 
 .footer-text {
@@ -333,6 +362,13 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
   color: #ffa5ba;
 }
+@media screen and (min-width: 768px) {
+  .footer-text {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+}
 
 .footer-logo {
   font-family: "Titan One";
@@ -342,6 +378,12 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .contacts-footer {
@@ -359,6 +401,11 @@ h1, h2, h3, h4, h5, h6, p {
 .contacts-footer__tel {
   color: #d82f58;
 }
+@media screen and (min-width: 768px) {
+  .contacts-footer {
+    font-size: 14px;
+  }
+}
 
 .footer-list {
   margin-bottom: 16px;
@@ -368,6 +415,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer-list a {
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .footer-list {
+    margin-bottom: 12px;
+  }
 }
 
 .socials-footer {
@@ -381,6 +433,11 @@ h1, h2, h3, h4, h5, h6, p {
 .socials-footer__item:last-child {
   margin-right: 0;
 }
+@media screen and (min-width: 768px) {
+  .socials-footer__item {
+    margin-right: 30px;
+  }
+}
 
 .ice-cream-footer {
   display: block;
@@ -393,5 +450,14 @@ h1, h2, h3, h4, h5, h6, p {
   color: #978689;
   padding-top: 16px;
   padding-bottom: 20px;
-  background-color: #fff5f6;
+}
+@media screen and (min-width: 768px) {
+  .ice-cream-footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 186%;
+  }
+  .ice-cream-footer br {
+    content: "";
+  }
 }/*# sourceMappingURL=index.css.map */
