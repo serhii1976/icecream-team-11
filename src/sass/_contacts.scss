@@ -1,8 +1,9 @@
 .contacts {
   padding-top: 48px;
   padding-bottom: 48px;
-  background: #FFF5F6;
-
+  background-image: linear-gradient( to bottom,
+    #FFFfff 0 26%,
+     #FFF5F6 0 74%);
 
   // display: flex;
   // justify-content: center;
@@ -167,6 +168,7 @@
   color: #FFFFFF;
 }
 
+
 .our-button:after {
   position: absolute;
 
@@ -201,6 +203,10 @@
   border: 1px solid transparent;
 
   color: #D41443;
+  
+}
+.franchise-button:hover,:focus{
+  background: #ECEBEB;
 }
 
 .franchise-button:after {
