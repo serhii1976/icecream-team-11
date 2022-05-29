@@ -7,8 +7,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 140px;
-  width: 200px;
-  height: 36px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -17,6 +15,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $red;
+
+  @include mq(tablet){ 
+    font-size: 48px;
+}
+
+
 }
 
 .products__label {
@@ -24,8 +28,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  width: 142px;
-  height: 21px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
@@ -33,6 +35,25 @@
   text-align: center;
   text-transform: uppercase;
   color: $pink;
+  
+  @include mq(tablet){ 
+    font-size: 26px;
+    line-height: 1.53;
+}
+  
+}
+
+.products__list{
+    @include mq(tablet){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
 }
 
 .products__item {
@@ -40,6 +61,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include mq(tablet){
+    margin-right: 16px;
+    margin-bottom: 0;
+    &:last-child{
+        margin-right: 0;
+    }
+}
 }
 
 .products__wrapper {
@@ -50,6 +79,11 @@
   width: 280px;
   height: 489px;
   border-radius: 24px;
+
+  @include mq(tablet){ 
+    width: 224px;
+    height: 473px;
+}
 }
 
 .products__wrapper--fist {
@@ -70,32 +104,46 @@
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  top: -140px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
+
+  @include mq(tablet){ 
+    width: 224px;
+    height: 224px;
+}
+
+
 }
 
 .products__wrapper--fist::before {
   content: '';
-  top: -140px;
-  background-image: url(../images/icecream-mobile.png),
-    url(../images/icecream-mobile@x2.png);
+  
+  background-image: url(../images/icecream-mobile.png);
+    @include mq(retina){
+        background-image: url(../images/icecream-mobile@x2.png);
+    }
+    
 }
 
 .products__wrapper--second::before {
   content: '';
-  background-image: url(../images/icecoffee-mobile.png),
-    url(../images/icecoffee-mobile@x2.png);
-  top: -140px;
+  background-image: url(../images/icecoffee-mobile.png);
+  @include mq(retina){
+    background-image: url(../images/icecoffee-mobile@x2.png);
+}
+ 
+ 
 }
 
 .products__wrapper--third::before {
   content: '';
   background-image: url(../images/milkshake-mobile.png),
     url(../images/milkshake-mobile@x2.png);
-  top: -140px;
+  
 }
 
 .products__subtitle {
@@ -114,25 +162,27 @@
   text-transform: uppercase;
   color: $white;
   padding-top: 160px;
+
+  @include mq(tablet){ 
+    padding-top: 118px;
+}
 }
 
 .products__subtitle::after {
   content: '';
+  background-image: url(../images/icon/svg-all.svg#icon-Ellipse);
+  position: absolute;
+  display: block;
   width: 6px;
   height: 6px;
-//   position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 32px;
+
   
-  background-image: url(../images/icon/svg-all.svg#icon-elipse);
   background-color: $whiteBtnHoverBackG;
-  border-radius: 50%;
+
 }
 
 .products__about {
-  width: 200px;
+  width: 200px; 
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -144,6 +194,11 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $white;
+
+  @include mq(tablet){ 
+    width: 160px;
+}
+
 }
 
 
@@ -166,6 +221,7 @@
 }
 
 .products__description{
+    cursor: pointer;
     background-color: $whiteBtnHoverBackG;
     &:hover,
     &:focus{
