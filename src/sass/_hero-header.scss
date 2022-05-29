@@ -7,8 +7,13 @@
   &__nav {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
+  }
+}
+
+.logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 293px;
   }
 }
 .hero-header__circle {
@@ -37,13 +42,13 @@
   background-color: $pink;
   z-index: 1;
 
-    animation: animationCircle;
-    animation-iteration-count: 1;
-    animation-timing-function: $cubic;
-    animation-direction: reverse;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
+  animation: animationCircle;
+  animation-iteration-count: 1;
+  animation-timing-function: $cubic;
+  animation-direction: reverse;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
 
   @media screen and (min-width: 768px) {
     top: 43px;
@@ -66,13 +71,13 @@
   position: relative;
   z-index: 2;
 
-    animation: animationIcecream;
-    animation-iteration-count: 1;
-    animation-timing-function: $cubic;
-    animation-direction: reverse;
-    animation-delay: 0;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
+  animation: animationIcecream;
+  animation-iteration-count: 1;
+  animation-timing-function: $cubic;
+  animation-direction: reverse;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
 
   background-repeat: no-repeat;
 
@@ -243,29 +248,28 @@
 }
 
 .hero-header__button-icon {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    color: $red;
-    background-color: $white;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: $red;
+  background-color: $white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    @media screen and (min-width: 1280px) {
-      width: 26px;
-      height: 26px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
 
-    transition: background-color 250ms $cubic;
+  transition: background-color 250ms $cubic;
 
-    &:hover,
-    &:focus {
-      background-color: $whiteBtnHoverBackG;
-    }
-
+  &:hover,
+  &:focus {
+    background-color: $whiteBtnHoverBackG;
+  }
 }
 
 .hero-icon {
@@ -373,20 +377,20 @@
     0% {
       top: 73px;
       left: 36px;
-      transform: scale(1.0);  
+      transform: scale(1);
     }
     100% {
       top: -345px;
       left: 36px;
-      transform: scale(0.3); 
+      transform: scale(0.3);
     }
   }
 
   @keyframes animationIcecream {
     0% {
-      background-position: bottom 0 left 117px;        
+      background-position: bottom 0 left 117px;
     }
-  
+
     100% {
       background-position: bottom -410px left 117px;
     }
@@ -398,24 +402,24 @@
     0% {
       top: 43px;
       left: 248px;
-      transform: scale(1.0);  
+      transform: scale(1);
     }
     100% {
       top: -335px;
       left: 248px;
-      transform: scale(0.3); 
+      transform: scale(0.3);
     }
   }
 
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 332px, bottom 16px left 32px,
-      bottom 1px right 32px;        
+        bottom 1px right 32px;
     }
-  
+
     100% {
       background-position: bottom -336px left 332px, bottom 16px left 32px,
-      bottom 1px right 32px;
+        bottom 1px right 32px;
     }
   }
 }
@@ -425,26 +429,24 @@
     0% {
       top: 54px;
       left: 517px;
-      transform: scale(1.0);  
+      transform: scale(1);
     }
     100% {
       top: -534px;
       left: 517px;
-      transform: scale(0.3); 
+      transform: scale(0.3);
     }
   }
 
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 636px, bottom 60px left 16px,
-      bottom 1px right 16px;        
+        bottom 1px right 16px;
     }
-  
+
     100% {
       background-position: bottom -557px left 636px, bottom 60px left 16px,
-      bottom 1px right 16px;
+        bottom 1px right 16px;
     }
   }
 }
-
-
