@@ -318,9 +318,6 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-section {
   padding-top: 48px;
   background-color: #fff5f6;
-}
-
-.footer-container {
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -356,13 +353,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 12px;
   line-height: 186%;
   text-align: right;
-  color: #d82f58;
+  color: #000;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
-  .contacts-footer__tel {
-    color: #d82f58;
-  }
+.contacts-footer__tel {
+  color: #d82f58;
 }
 
 .footer-list {
@@ -395,7 +390,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
-  color: #907e82;
+  color: #978689;
   padding-top: 16px;
   padding-bottom: 20px;
+  background-color: #fff5f6;
 }/*# sourceMappingURL=index.css.map */

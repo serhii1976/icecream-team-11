@@ -1,9 +1,10 @@
 .footer-section {
   padding-top: 48px;
   background-color: #fff5f6;
+  border-bottom: 1px solid #e1e1e1;
 }
 .footer-container {
-  border-bottom: 1px solid #e1e1e1;
+  // border-bottom: 1px solid #e1e1e1;
 }
 
 .socials__icon {
@@ -38,12 +39,10 @@
   font-size: 12px;
   line-height: 186%;
   text-align: right;
-  color: #d82f58;
+  color: #000;
   margin-bottom: 40px;
   &__tel {
-    @include tablet {
-      color: #d82f58;
-    }
+    color: #d82f58;
   }
 }
 
@@ -77,7 +76,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
-  color: #907e82;
+  color: #978689;
   padding-top: 16px;
   padding-bottom: 20px;
+  background-color: #fff5f6;
 }
+
+// .footer-bottom {
+//   border-bottom: 1px solid #e1e1e1;
+// }
