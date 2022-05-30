@@ -1,0 +1,118 @@
+$gallery__image-margin-mob: 0.31vw;
+$gallery__img-width-mob: calc(
+  (100vw - 40px - $gallery__image-margin-mob * 10) / 7
+);
+.gallery {
+  background: linear-gradient($pinkLightBackG 40%, $white 40%);
+}
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc($gallery__img-width-mob * 3 + $gallery__image-margin-mob * 4);
+  justify-content: center;
+  align-content: center;
+  @media screen and (min-width: 480px) {
+    height: 186px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 263px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 432px;
+  }
+}
+.gallery__item {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  margin: $gallery__image-margin-mob;
+  @media screen and (min-width: 480px) {
+    margin: 1.5px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 2px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 3px;
+  }
+}
+.gallery__item:nth-child(odd) {
+  align-items: flex-start;
+}
+.gallery__item:first-child {
+  margin-left: 0;
+}
+.gallery__item:last-child {
+  margin-right: 0;
+}
+.gallery__item:first-child,
+.gallery__item:last-child {
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery__item:nth-child(2n):not(:last-child),
+.gallery__item:nth-child(4n + 3):not(:last-child) {
+  top: 2vw;
+  @media screen and (min-width: 480px) {
+    top: 9px;
+  }
+  @media screen and (min-width: 768px) {
+    top: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 45px;
+  }
+}
+.gallery__item:nth-child(4n):not(:last-child),
+.gallery__item:nth-child(4n + 5):not(:last-child) {
+  top: -2vw;
+  @media screen and (min-width: 480px) {
+    top: -9px;
+  }
+  @media screen and (min-width: 768px) {
+    top: -14px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -45px;
+  }
+}
+.gallery__img {
+  border-radius: 12.5%;
+  width: $gallery__img-width-mob;
+  height: auto;
+  transition: 250ms $cubic;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1.5px 3px,
+    rgba(0, 0, 0, 0.23) 0px 1.5px 3px;
+  &:hover,
+  &:focus {
+    width: calc($gallery__img-width-mob * 2);
+  }
+  @media screen and (min-width: 480px) {
+    width: 60px;
+    &:hover,
+    &:focus {
+      width: 120px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 85px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+    &:hover,
+    &:focus {
+      width: 170px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 140px;
+    border-radius: 19px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    &:hover,
+    &:focus {
+      width: 280px;
+    }
+  }
+}
