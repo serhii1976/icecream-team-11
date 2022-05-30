@@ -11,13 +11,13 @@
   max-width: 100%;
   @include tablet {
     display: flex;
-    margin-left: -22px;
+    // margin-left: -22px;
     justify-content: center;
+  }
 
-    @include desktop {
-      margin-left: -127px;
-      justify-content: center;
-    }
+  @include desktop {
+    // margin-left: -128px;
+    justify-content: center;
   }
 }
 .advantage-list__item {
@@ -29,8 +29,8 @@
   }
   @include desktop {
     max-width: 100%;
-    width: calc(100% / 3 - 127px);
-    margin-left: 127px;
+    width: calc(100% / 3 - 128px);
+    margin-left: 128px;
   }
 }
 .advantage-list__item:not(:last-child) {
