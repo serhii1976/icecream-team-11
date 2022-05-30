@@ -17,3 +17,16 @@
     arrows: false
   });
 })();
+
+//When the menu is open, fixes the body. 
+(() => {
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const mobileMenuBody = document.querySelector("[body-menu]");
+    
+  menuBtnRef.addEventListener("click", () => {
+    const expanded =
+      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+    mobileMenuBody.classList.toggle("is-assign");
+  });
+  })();
