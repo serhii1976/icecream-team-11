@@ -361,6 +361,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
 }
@@ -368,7 +369,15 @@ h1, h2, h3, h4, h5, h6, p {
   .footer-text {
     font-size: 26px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-text {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+  .footer-text br {
+    content: "";
   }
 }
 
@@ -385,6 +394,15 @@ h1, h2, h3, h4, h5, h6, p {
   .footer-logo {
     font-size: 48px;
     letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-logo {
+    font-size: 58px;
+    line-height: 1.13;
+  }
+  .footer-logo br {
+    content: "";
   }
 }
 
@@ -408,6 +426,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .contacts-footer {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .footer-list {
   margin-bottom: 16px;
@@ -421,6 +445,14 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 768px) {
   .footer-list {
     margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-list {
+    margin-bottom: 16px;
+  }
+  .footer-list:last-child {
+    margin-bottom: 60px;
   }
 }
 
@@ -438,6 +470,11 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 768px) {
   .socials-footer__item {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .socials-footer__item {
+    margin-top: 12px;
   }
 }
 
