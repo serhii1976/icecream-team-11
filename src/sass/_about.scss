@@ -126,10 +126,10 @@
         min-width: 176px;
     }
 
-    // &__button:hover,
-    // &__button:hover {
-    //     background-color: $red;
-    // }
+    &__button:hover,
+    &__button:hover {
+        background-color: #ECEBEB;
+    }
 
     &__button-text {
         font-family: 'DM Sans', sans-serif;

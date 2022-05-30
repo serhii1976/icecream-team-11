@@ -286,10 +286,10 @@
 
 .products__description{
     cursor: pointer;
-    background-color: $whiteBtnHoverBackG;
+    background-color: white;
     &:hover,
     &:focus{
-        background-color: $redBtnHoverBackG;
+        background-color: #ECEBEB;
 
         }
 }
