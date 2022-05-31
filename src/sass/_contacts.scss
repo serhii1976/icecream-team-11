@@ -205,8 +205,10 @@
   color: #D41443;
   
 }
-.franchise-button:hover,:focus{
-  background: #ECEBEB;
+.franchise-button {
+  &:hover, &:focus {
+    background: #ECEBEB;
+  }
 }
 
 .franchise-button:after {
