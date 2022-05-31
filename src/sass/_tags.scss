@@ -3,6 +3,9 @@ body {
   font-size: 12px;
   font-weight: 500;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 img {
   display: block;
