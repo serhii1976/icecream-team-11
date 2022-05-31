@@ -1,0 +1,144 @@
+.footer {
+  background-color: #fff5f6;
+}
+
+.footer-section {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.footer-container {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.socials__icon {
+  fill: #fea5bb;
+  &:hover {
+    fill: #d41443;
+  }
+}
+
+.footer-text {
+  font-family: 'Titan One';
+  font-weight: 400; 
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+    br {
+      content: '';
+    }
+  }
+}
+
+.footer-logo {
+  font-family: 'Titan One';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  @include tablet {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+  @include desktop {
+    br {
+      content: '';
+    }
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.contacts-footer {
+  text-decoration: none;
+  display: block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000;
+  margin-bottom: 40px;
+  &__tel {
+    color: #d82f58;
+  }
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.footer-list {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 40px;
+  }
+  a {
+    text-decoration: none;
+  }
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: right;
+  &__item {
+    margin-right: 28.24px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include tablet {
+      margin-right: 30px;
+    }
+    @include desktop {
+      margin-top: 12px;
+    }
+  }
+}
+
+.ice-cream-footer {
+  display: block;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  color: #978689;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 186%;
+    br {
+      content: '';
+    }
+  }
+}

@@ -1,48 +1,134 @@
+$gallery__image-margin-resp: 0.31vw;
+$gallery__image-margin-mobile: 1.5px;
+$gallery__image-margin-tablet: 2px;
+$gallery__image-margin-deskop: 3px;
+$gallery__img-width-resp: calc(
+  (100vw - 32px - $gallery__image-margin-resp * 10) / 7
+);
+$gallery__img-width-mobile: 62px;
+$gallery__img-width-tablet: 85px;
+$gallery__img-width-desktop: 140px;
 .gallery {
   background: linear-gradient($pinkLightBackG 40%, $white 40%);
 }
-// .gallery__container {
-//   padding: 2vw 0;
-// }
 .gallery__list {
-  width: calc(6 * (12.5vw + 5px));
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: calc(37.5vw + 10px);
+  height: calc($gallery__img-width-resp * 3 + $gallery__image-margin-resp * 2);
   justify-content: center;
+  align-content: center;
+  @media screen and (min-width: 480px) {
+    height: calc(
+      $gallery__img-width-mobile * 3 + $gallery__image-margin-mobile * 2
+    );
+  }
+  @media screen and (min-width: 768px) {
+    height: calc(
+      $gallery__img-width-tablet * 3 + $gallery__image-margin-tablet * 2
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    height: calc(
+      $gallery__img-width-desktop * 3 + $gallery__image-margin-deskop * 2
+    );
+  }
 }
 .gallery__item {
   display: flex;
+  position: relative;
   align-items: flex-end;
+  margin: $gallery__image-margin-resp;
+  @media screen and (min-width: 480px) {
+    margin: $gallery__image-margin-mobile;
+  }
+  @media screen and (min-width: 768px) {
+    margin: $gallery__image-margin-tablet;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: $gallery__image-margin-deskop;
+  }
 }
 .gallery__item:nth-child(odd) {
+  margin-bottom: 0;
   align-items: flex-start;
+}
+.gallery__item:nth-child(even) {
+  margin-top: 0;
+}
+.gallery__item:first-child {
+  margin-left: 0;
+}
+.gallery__item:last-child {
+  margin-right: 0;
 }
 .gallery__item:first-child,
 .gallery__item:last-child {
   align-items: center;
   height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .gallery__item:nth-child(2n):not(:last-child),
 .gallery__item:nth-child(4n + 3):not(:last-child) {
-  position: relative;
-  top: 2vw;
+  top: calc($gallery__img-width-resp / 100 * 12.5);
+  @media screen and (min-width: 480px) {
+    top: calc($gallery__img-width-mobile / 100 * 12.5);
+  }
+  @media screen and (min-width: 768px) {
+    top: calc($gallery__img-width-tablet/ 100 * 12.5);
+  }
+  @media screen and (min-width: 1280px) {
+    top: calc($gallery__img-width-desktop/ 100 * 12.5);
+  }
 }
 .gallery__item:nth-child(4n):not(:last-child),
 .gallery__item:nth-child(4n + 5):not(:last-child) {
-  position: relative;
-  top: -2vw;
+  top: calc($gallery__img-width-resp / 100 * 12.5 * -1);
+  @media screen and (min-width: 480px) {
+    top: calc($gallery__img-width-mobile / 100 * 12.5 * -1);
+  }
+  @media screen and (min-width: 768px) {
+    top: calc($gallery__img-width-tablet / 100 * 12.5 * -1);
+  }
+  @media screen and (min-width: 1280px) {
+    top: calc($gallery__img-width-desktop / 100 * 12.5 * -1);
+  }
 }
 .gallery__img {
-  border-radius: 1.56vw;
-  width: 12.5vw;
-  height: 12.5vw;
-  margin: 2.5px;
-  transition: 250ms;
-  &:hover {
-    width: 20vw;
-    height: 20vw;
+  border-radius: 12.5%;
+  width: $gallery__img-width-resp;
+  height: auto;
+  transition: 250ms $cubic;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1.5px 3px,
+    rgba(0, 0, 0, 0.23) 0px 1.5px 3px;
+  &:hover,
+  &:focus {
+    width: calc($gallery__img-width-resp * 2);
+  }
+  @media screen and (min-width: 480px) {
+    width: $gallery__img-width-mobile;
+    &:hover,
+    &:focus {
+      width: ($gallery__img-width-mobile * 2);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: $gallery__img-width-tablet;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+    &:hover,
+    &:focus {
+      width: ($gallery__img-width-tablet * 2);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: $gallery__img-width-desktop;
+    border-radius: 19px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    &:hover,
+    &:focus {
+      width: ($gallery__img-width-desktop * 2);
+    }
   }
 }

@@ -13,7 +13,7 @@
 }
 .hero-header__circle {
   position: relative;
-  /*max-width: 480px;*/
+  max-width: 480px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -37,6 +37,14 @@
   background-color: $pink;
   z-index: 1;
 
+    animation: animationCircle;
+    animation-iteration-count: 1;
+    animation-timing-function: $cubic;
+    animation-direction: reverse;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
   @media screen and (min-width: 768px) {
     top: 43px;
     left: 248px;
@@ -57,6 +65,14 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
+
+    animation: animationIcecream;
+    animation-iteration-count: 1;
+    animation-timing-function: $cubic;
+    animation-direction: reverse;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
 
   background-repeat: no-repeat;
 
@@ -226,6 +242,42 @@
   }
 }
 
+.hero-header__button-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: $red;
+    background-color: $white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+      width: 26px;
+      height: 26px;
+    }
+
+    transition: background-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: $whiteBtnHoverBackG;
+    }
+
+}
+
+.hero-icon {
+  fill: currentColor;
+  width: 6px;
+  height: 6px;
+  @media screen and (min-width: 1280px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 .hero-header__list-number {
   display: none;
 
@@ -313,3 +365,58 @@
     margin-bottom: 20px;
   }
 }
+
+// animation
+
+@keyframes animationCircle {
+  0% {    
+    transform: scale(1.0);
+    background-color: $pink;   
+  }
+  100% {    
+    transform: scale(0.1);
+    background-color: $pinkBackG;
+  }
+}
+
+@media screen and (max-width: 767px) {  
+  @keyframes animationIcecream {
+    0% {
+      background-position: bottom 0 left 117px;        
+    }
+  
+    100% {
+      background-position: bottom -410px left 117px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes animationIcecream {
+    0% {
+      background-position: bottom 0 left 332px, bottom 16px left 32px,
+      bottom 1px right 32px;        
+    }
+  
+    100% {
+      background-position: bottom -336px left 332px, bottom 16px left 32px,
+      bottom 1px right 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {  
+  @keyframes animationIcecream {
+    0% {
+      background-position: bottom 0 left 636px, bottom 60px left 16px,
+      bottom 1px right 16px;        
+    }
+  
+    100% {
+      background-position: bottom -557px left 636px, bottom 60px left 16px,
+      bottom 1px right 16px;
+    }
+  }
+}
+
+

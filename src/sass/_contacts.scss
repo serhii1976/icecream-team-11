@@ -362,11 +362,10 @@
     width: 180px;
   }
 }
-
-
-.franchise-button:hover,
-:focus {
-  background-color: #ECEBEB;
+.franchise-button {
+  &:hover, &:focus {
+    background: #ECEBEB;
+  }
 }
 
 .franchise-button:after {

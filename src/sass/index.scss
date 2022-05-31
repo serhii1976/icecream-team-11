@@ -1,4 +1,5 @@
 @import './reset';
+@import './mixins';
 @import './contacts';
 @import './base';
 
@@ -8,6 +9,7 @@
 @import './normalize';
 @import './tags';
 @import './variables';
+@import './footer.scss';
 @import './hidden';
 @import './products';
 // =======
@@ -26,5 +28,4 @@
 //components
 @import './components/mobile-menu';
 @import './components/btn-menu';
-// @import './components/header';
 @import './gallery';
