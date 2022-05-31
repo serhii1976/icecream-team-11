@@ -1,15 +1,20 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
+    openModalBtns: document.querySelectorAll("[data-modal-open]"),
+    closeModalBtns: document.querySelectorAll("[data-modal-close]"),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
+  for (const btn of refs.openModalBtns) {
+    btn.addEventListener("click", () => toggleModal(btn.dataset.modalOpen))
+  }
 
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.menu.classList.toggle('is-open');
+  for (const btn of refs.closeModalBtns) {
+    btn.addEventListener("click", () => toggleModal(btn.dataset.modalClose))
+  }
+
+  function toggleModal(id) {
+    document.body.classList.toggle("modal-open")
+    const modal = document.getElementById(id)
+    modal.classList.toggle("is-hidden");
   }
 })();
