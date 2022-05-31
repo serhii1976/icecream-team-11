@@ -285,16 +285,12 @@
   border: transparent;
   border-radius: 50%;
   cursor: pointer;
-
   background-color: $whiteBtnHoverBackG;
-    color: $redBtnHoverBackG;
+  color: $redBtnHoverBackG;
     &:hover,
     &:focus{
-        background-color: $redBtnHoverBackG;
-        color: $whiteBtnHoverBackG;
-        // fill: $whiteBtnHoverBackG;;
-
-        }
+        background-color: $greyBackG;
+    }
 }
 
 
@@ -307,11 +303,5 @@
   align-items: center;
   width: 12px;
   height: 10px;
- 
   fill: currentColor;
-  &:hover,
-  &:focus{
-      fill: currentColor;
-      }
-
 }
