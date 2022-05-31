@@ -274,6 +274,8 @@
 }
 
 
+
+
 .products__description {
   width: 40px;
   height: 40px;
@@ -282,17 +284,16 @@
   margin-right: auto;
   border: transparent;
   border-radius: 50%;
-}
-
-.products__description{
-    cursor: pointer;
-    background-color: white;
+  cursor: pointer;
+  background-color: $whiteBtnHoverBackG;
+  color: $redBtnHoverBackG;
     &:hover,
     &:focus{
-        background-color: #ECEBEB;
-
-        }
+        background-color: $greyBackG;
+    }
 }
+
+
 
 
 .products__btn-icon {
@@ -302,11 +303,5 @@
   align-items: center;
   width: 12px;
   height: 10px;
- 
-  fill: $redBtnHoverBackG;
-  &:hover,
-  &:focus{
-      fill: $whiteBtnHoverBackG;
-      }
-
+  fill: currentColor;
 }
