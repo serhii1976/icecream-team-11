@@ -274,6 +274,8 @@
 }
 
 
+
+
 .products__description {
   width: 40px;
   height: 40px;
@@ -282,17 +284,20 @@
   margin-right: auto;
   border: transparent;
   border-radius: 50%;
-}
+  cursor: pointer;
 
-.products__description{
-    cursor: pointer;
-    background-color: $whiteBtnHoverBackG;
+  background-color: $whiteBtnHoverBackG;
+    color: $redBtnHoverBackG;
     &:hover,
     &:focus{
         background-color: $redBtnHoverBackG;
+        color: $whiteBtnHoverBackG;
+        // fill: $whiteBtnHoverBackG;;
 
         }
 }
+
+
 
 
 .products__btn-icon {
@@ -303,10 +308,10 @@
   width: 12px;
   height: 10px;
  
-  fill: $redBtnHoverBackG;
+  fill: currentColor;
   &:hover,
   &:focus{
-      fill: $whiteBtnHoverBackG;
+      fill: currentColor;
       }
 
 }
