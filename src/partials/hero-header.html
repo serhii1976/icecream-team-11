@@ -11,6 +11,24 @@
           />
         </a>
 
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="">About us</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="">How it’s made?</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="">Our products</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="">Contact</a>
+          </li>
+        </ul>
+
         <button
           type="button"
           class="header-button is-active pointer"
@@ -40,9 +58,9 @@
         </button>
 
         <!--мобільне мєню-->
-        <div class="mobile-overlay is-open" data-menu>
+        <div class="mobile-overlay" data-menu>
           <div class="mobile-container" id="nav-container">
-            <button class="menu-button" type="submit">
+            <button class="menu-button" type="submit" data-modal-open>
               <span class="menu-button__wrapper">
                 <span class="menu-button__txt">Buy now</span>
                 <svg class="menu-button__icon">
@@ -118,6 +136,91 @@
           </a>
         </div>
       </div>
+    </div>
+  </div>
+  <!--modal header-->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <form class="call-form">
+        <b class="form-contents">Leave your details, we will call you back</b>
+
+        <div class="form-group">
+          <label class="label" for="name">Name</label>
+          <span class="input-wrapper">
+            <input
+              type="text"
+              class="call-input pointer"
+              name="name"
+              id="name"
+            />
+            <svg class="icon-call" width="12" height="12">
+              <use href="./images/icon/svg-all.svg#form-name"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="tel">Phone number</label>
+          <span class="input-wrapper">
+            <input type="tel" class="call-input pointer" name="tel" id="tel" />
+            <svg class="icon-call" width="13" height="13">
+              <use href="./images/icon/svg-all.svg#form-phone"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="mail">Email</label>
+          <span class="input-wrapper">
+            <input
+              type="email"
+              class="call-input pointer"
+              name="mail"
+              id="mail"
+            />
+            <svg class="icon-call" width="15" height="12">
+              <use href="./images/icon/svg-all.svg#form-mail"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="form-comment">
+          <label class="label pointer" for="comment">Comments</label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="10"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+
+        <div class="agreement">
+          <label class="agreement-label" for="agreement">
+            <input
+              class="agreement-label__checkbox"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            />
+            <svg class="agreement-label__icon pointer" width="16" height="15">
+              <use href="./images/icon/svg-all.svg#form-mark"></use>
+            </svg>
+            <span class="agreement-label__txt">
+              I agree with the mailing and accept<a href=""
+                >Terms of the contract</a
+              >
+            </span>
+          </label>
+        </div>
+
+        <button type="button" class="clos-modal pointer" data-modal-close>
+          <svg class="clos-icon">
+            <use href="./images/icon/svg-all.svg#icon-closing"></use>
+          </svg>
+        </button>
+
+        <button class="call-sabmit pointer" type="submit">Send</button>
+      </form>
     </div>
   </div>
 </header>
