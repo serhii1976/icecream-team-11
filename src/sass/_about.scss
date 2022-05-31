@@ -3,7 +3,7 @@
     padding-bottom: 40px;
     background-image: url(../images/milksplash-mobile.png);
     background-repeat: no-repeat;
-    background-position: right 0 bottom 215px;
+    background-position: right 0 bottom 190px;
     background-color: $pinkLightBackG;
     background-size: contain;
 
@@ -23,6 +23,8 @@
     background-image: url(../images/milksplash-desktop@x2.png);
     }
     background-position: center bottom 0;
+    background-size: auto;
+    
     }
 
     &__container{
