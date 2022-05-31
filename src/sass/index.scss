@@ -5,3 +5,26 @@
 @import './common';
 @import './example';
 @import './container';
+@import './normalize';
+@import './tags';
+@import './variables';
+@import './hidden';
+@import './products';
+// =======
+@import './mixins';
+@import './customer-reviews';
+
+// about section
+@import './about';
+@import './hero-header';
+@import './hidden';
+@import './advantages';
+
+//breakpoints all
+@import './breakpoints';
+
+//components
+@import './components/mobile-menu';
+@import './components/btn-menu';
+// @import './components/header';
+@import './gallery';
