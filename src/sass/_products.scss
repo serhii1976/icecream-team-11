@@ -273,6 +273,9 @@
 
 }
 
+#more{
+    display: none;
+}
 
 
 
@@ -298,7 +301,7 @@
     &:hover,
     &:focus{
         background-color: $greyBackG;
-        transform: rotate(360deg);
+        transform: scale(1.2);
     }
     
 }
