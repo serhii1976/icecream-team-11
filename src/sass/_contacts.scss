@@ -408,6 +408,7 @@
 
 .modal {
   position: absolute;
+  overflow: hidden;
   width: 450px;
   // min-height: 581px;
   top: 50%;
@@ -439,6 +440,7 @@
   right: 10px;
   width: 32px;
   height: 32px;
+  line-height: 8px;
   border: 1px solid #000000;
   border-radius: 50%;
   background-color: transparent;
