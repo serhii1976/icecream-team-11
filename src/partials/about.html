@@ -1,3 +1,4 @@
+<!-- Секція about -->
 <section class="about-section" id="about">
     <a name="about"></a>
     <div class="about-section__container container">
@@ -31,14 +32,27 @@
         Aliquam erat volutpat. Aenean accumsan.
         </span>
     
-        <button type="button" class="about-section__button about-section__button-text"> Read more 
+        <button data-modal-open type="button" class="about-section__button about-section__button-text"> Read more 
             <svg class="about-section__button-icon" width="10" height="10">
                 <use href="./images/icon/svg-all.svg#icon-btn-arrow"></use>
             </svg>
         </button>
         </div>
         </div>
-        
     </div>
-
 </section>
+
+<!-- Модальне вікно about -->
+<div data-modal class="backdrop is-hidden">
+    <div class="about-modal">
+        <button data-modal-close type="button" class="about-modal__close-button">
+            <svg class="about-modal__close-button-svg" width="30px" height="30px">
+                <use href="./images/icon/svg-all.svg#about-modal-close"></use>
+            </svg>
+        </button>
+        <p class="about-modal__title">Our products</p>
+        <p class="about-modal__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem harum eaque sint iste eveniet ullam impedit minima asperiores a et debitis laborum labore at sunt, aut exercitationem nesciunt eum! Aut?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam corporis eos ipsa omnis similique ex rerum laudantium, neque voluptatum architecto iste in consectetur excepturi veniam doloremque alias ipsum veritatis natus?   
+        </p>
+    </div>
+</div>
