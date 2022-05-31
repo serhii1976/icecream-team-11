@@ -1,5 +1,4 @@
 .header-button {
-  position: relative;
   z-index: 50;
   display: inline-flex;
   width: 20px;
@@ -9,18 +8,18 @@
   background-color: transparent;
 
   & &__menu {
-    opacity: 1;
+    opacity: 0;
   }
 
   & &__cross {
+    opacity: 1;
+  }
+
+  &.is-active &__cross {
     opacity: 0;
   }
 
   &.is-active &__menu {
-    opacity: 0;
-  }
-
-  &.is-active &__cross {
     opacity: 1;
   }
 }
@@ -80,15 +79,17 @@
     background-color: $pinkModalBackG;
 
     @media screen and (min-width: $tablet) {
-      top: 4%;
-      left: 40%;
       width: 275px;
       height: 100vh;
+      left: 65%;
     }
-  }
 
-  .mobile-container.is-open {
-    display: none;
+    @media screen and (min-width: 769px) and (max-width: 1070px) {
+      width: 415px;
+      height: 100vh;
+      left: 61%;
+      padding: 75px 10px;
+    }
   }
 }
 

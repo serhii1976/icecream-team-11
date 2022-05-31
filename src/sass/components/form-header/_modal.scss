@@ -16,7 +16,7 @@
   transition: transform $timeChange $cubic;
 
   @media screen and (max-width: $mobileModalSize) {
-    width: 335px;
+    width: 312px;
   }
 
   @media screen and (min-width: $desktop) {

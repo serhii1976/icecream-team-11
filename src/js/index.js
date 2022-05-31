@@ -29,4 +29,4 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
     mobileMenuBody.classList.toggle("is-assign");
   });
-  })();
+})();
