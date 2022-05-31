@@ -440,7 +440,7 @@
   width: 32px;
   height: 32px;
   line-height: 8px;
-  border: 1px solid #000000;
+  border: 1px solid #9b9191;
   border-radius: 50%;
   background-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -506,7 +506,7 @@
 
   &:hover,
   &:focus {
-    border-color: #0cc3c0;
+    border-color: #FFA5BA;
   }
 }
 
@@ -523,7 +523,7 @@
 
   &:hover,
   &:focus {
-    border-color: #0cc3c0;
+    border-color: #FFA5BA;
   }
 }
 
