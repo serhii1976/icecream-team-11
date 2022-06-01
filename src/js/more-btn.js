@@ -10,5 +10,4 @@ function readMore(){
         dots.style.display="none";
         more.style.display ="inline";
      }
-   )
 }
