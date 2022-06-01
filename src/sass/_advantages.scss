@@ -1,7 +1,10 @@
 .advantages {
   background-color: $pinkLightBackG;
-  // padding-top: 40px;
+  padding-top: 40px;
   padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
   @include desktop {
     padding-bottom: 120px;
   }

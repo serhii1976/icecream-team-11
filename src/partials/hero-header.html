@@ -52,8 +52,7 @@
           class="nav-button"
           type="submit"
           aria-expanded="false"
-          data-modal-open-header
-          data-menu-button
+          data-modal-open="modal-header-menu"
         >
           <span class="nav-button__wrapper">
             <span class="nav-button__txt">Buy now</span>
@@ -66,7 +65,7 @@
         <!--мобільне мєню-->
         <div class="mobile-overlay" data-menu>
           <div class="mobile-container" id="nav-container">
-            <button class="menu-button" type="submit" data-modal-open>
+            <button class="menu-button" type="submit" data-modal-open="modal-header-menu">
               <span class="menu-button__wrapper">
                 <span class="menu-button__txt">Buy now</span>
                 <svg class="menu-button__icon">
@@ -76,19 +75,19 @@
             </button>
             <ul class="mobile-list">
               <li class="mobile-list__item">
-                <a class="mobile-list__link" href="./index.html">Home</a>
+                <a class="mobile-list__link" data-menu-close href="./index.html">Home</a>
               </li>
               <li class="mobile-list__item">
-                <a class="mobile-list__link" href="">About us</a>
+                <a class="mobile-list__link" data-menu-close href="#about">About us</a>
               </li>
               <li class="mobile-list__item">
-                <a class="mobile-list__link" href="#contacts">How it’s made?</a>
+                <a class="mobile-list__link" data-menu-close href="#about">How it’s made?</a>
               </li>
               <li class="mobile-list__item">
-                <a class="mobile-list__link" href="#contacts">Our products</a>
+                <a class="mobile-list__link" data-menu-close href="#products">Our products</a>
               </li>
               <li class="mobile-list__item">
-                <a class="mobile-list__link" href="#contacts">Contact</a>
+                <a class="mobile-list__link" data-menu-close href="#contacts">Contact</a>
               </li>
             </ul>
           </div>
@@ -145,7 +144,7 @@
     </div>
   </div>
   <!--modal header menu-->
-  <div class="backdrop is-hidden" data-modal>
+  <div id="modal-header-menu" class="backdrop is-hidden">
     <div class="modal">
       <form class="call-form">
         <b class="form-contents">Leave your details, we will call you back</b>
@@ -219,7 +218,7 @@
           </label>
         </div>
 
-        <button type="button" class="clos-modal pointer" data-modal-close>
+        <button type="button" class="clos-modal pointer" data-modal-close="modal-header-menu">
           <svg class="clos-icon">
             <use href="./images/icon/svg-all.svg#icon-closing"></use>
           </svg>

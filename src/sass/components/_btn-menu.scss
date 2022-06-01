@@ -66,6 +66,15 @@
 
   background-color: $white;
 
+  transition-property: background-color;
+  transition-duration: $timeChange;
+  transition-timing-function: $cubic;
+  transition-delay: 100ms;
+
+  &:hover {
+    background-color: $greyBackG;
+  }
+
   &__wrapper {
     margin-left: auto;
     margin-right: auto;

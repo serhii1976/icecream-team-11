@@ -1,6 +1,5 @@
 .about-section {
     padding-top: 40px;
-    padding-bottom: 40px;
     background-image: url(../images/milksplash-mobile.png);
     background-repeat: no-repeat;
     background-position: right 0 bottom 190px;
@@ -12,7 +11,7 @@
     }
 
     @include mq (tablet){
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
     background-image:none;
     }
@@ -24,6 +23,7 @@
     }
     background-position: center bottom 0;
     background-size: auto;
+    padding-top: 60px;
     
     }
 
