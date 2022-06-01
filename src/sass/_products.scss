@@ -273,6 +273,9 @@
 
 }
 
+#more{
+    display: none;
+}
 
 
 
@@ -287,11 +290,22 @@
   cursor: pointer;
   background-color: $whiteBtnHoverBackG;
   color: $redBtnHoverBackG;
+   
+    
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+
+
     &:hover,
     &:focus{
         background-color: $greyBackG;
+        transform: scale(1.2);
     }
+    
 }
+
 
 
 
