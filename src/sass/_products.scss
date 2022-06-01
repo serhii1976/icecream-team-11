@@ -14,7 +14,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 140px;
+  margin-bottom: 148px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -26,11 +26,12 @@
 
   @include mq(tablet){ 
     font-size: 48px;
+    margin-bottom: 154px;
 }
 
 @include mq(desktop){ 
     font-size: 58px;
-    padding-bottom: 261px;
+    margin-bottom: 261px;
 }
 
 
@@ -96,16 +97,19 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
-  height: 489px;
   border-radius: 24px;
+  padding-top: 160px;
+  padding-bottom: 40px;
 
   @include mq(tablet){ 
     width: 224px;
-    height: 473px;
+    padding-top: 119px;
+    
 }
 @include mq(desktop){ 
     width: 395px;
-    height: 535px;
+    padding-top: 165px;
+    padding-bottom: 60px;
 }
 }
 
@@ -233,14 +237,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $white;
-  padding-top: 160px;
 
-  @include mq(tablet){ 
-    padding-top: 118px;
-}
-    @include mq(desktop){ 
-        padding-top: 165px;
-}
 }
 
 .products__subtitle::after {
@@ -313,10 +310,6 @@
     }
     
 }
-
-
-
-
 
 .products__btn-icon {
   display: block;
