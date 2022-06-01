@@ -1,0 +1,52 @@
+.agreement-label__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  /*position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+}
+
+.agreement-label__icon {
+  margin-right: 7px;
+  border: 1.2px solid $black;
+  border-radius: 2px;
+
+  fill: $white;
+  background-color: $white;
+}
+
+.agreement-label__checkbox:checked + .agreement-label__icon {
+  background-color: $pink;
+  border-radius: 2px;
+  border-color: transparent;
+}
+
+.agreement-label__txt {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+
+  color: $red;
+
+  @media screen and (max-width: $mobileModalSize) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

@@ -1,0 +1,39 @@
+//header nav
+.nav-list {
+  display: flex;
+
+  &__item {
+    position: relative;
+
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $white;
+
+    transition-property: color;
+    transition-duration: $timeChange;
+    transition-timing-function: $cubic;
+    transition-delay: 100ms;
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: $desktopSecondary) {
+    display: none;
+  }
+}
