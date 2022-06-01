@@ -11,29 +11,30 @@
 }
 
 .advantage-list {
-  max-width: 100%;
   @include tablet {
     display: flex;
-    // margin-left: -22px;
     justify-content: center;
+    padding: 0 90px;
   }
-
   @include desktop {
-    // margin-left: -128px;
     justify-content: center;
+    padding: 0;
   }
 }
 .advantage-list__item {
   max-width: 230px;
   @include tablet {
-    max-width: 160px;
+    max-width: 100%;
     flex-basis: calc(100% / 3 - 22px);
-    margin-left: 22px;
+    &:not(:first-child) {
+      margin-left: 22px;
+    }
   }
   @include desktop {
-    max-width: 100%;
     flex-basis: calc(100% / 3 - 128px);
-    margin-left: 128px;
+    &:not(:first-child) {
+      margin-left: 128px;
+    }
   }
 }
 .advantage-list__item:not(:last-child) {
