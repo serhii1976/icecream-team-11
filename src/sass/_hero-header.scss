@@ -7,8 +7,17 @@
   &__nav {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
+  }
+}
+
+.logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 293px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    margin-right: 175px;
   }
 }
 .hero-header__circle {
@@ -243,29 +252,28 @@
 }
 
 .hero-header__button-icon {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    color: $red;
-    background-color: $white;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: $red;
+  background-color: $white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    @media screen and (min-width: 1280px) {
-      width: 26px;
-      height: 26px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
 
-    transition: background-color 250ms $cubic;
+  transition: background-color 250ms $cubic;
 
-    &:hover,
-    &:focus {
-      background-color: $whiteBtnHoverBackG;
-    }
-
+  &:hover,
+  &:focus {
+    background-color: $whiteBtnHoverBackG;
+  }
 }
 
 .hero-icon {
@@ -382,9 +390,9 @@
 @media screen and (max-width: 767px) {  
   @keyframes animationIcecream {
     0% {
-      background-position: bottom 0 left 117px;        
+      background-position: bottom 0 left 117px;
     }
-  
+
     100% {
       background-position: bottom -410px left 117px;
     }
@@ -395,12 +403,12 @@
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 332px, bottom 16px left 32px,
-      bottom 1px right 32px;        
+        bottom 1px right 32px;
     }
-  
+
     100% {
       background-position: bottom -336px left 332px, bottom 16px left 32px,
-      bottom 1px right 32px;
+        bottom 1px right 32px;
     }
   }
 }
@@ -409,14 +417,12 @@
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 636px, bottom 60px left 16px,
-      bottom 1px right 16px;        
+        bottom 1px right 16px;
     }
-  
+
     100% {
       background-position: bottom -557px left 636px, bottom 60px left 16px,
-      bottom 1px right 16px;
+        bottom 1px right 16px;
     }
   }
 }
-
-
