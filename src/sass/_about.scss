@@ -41,8 +41,13 @@
         width: 200px;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 32px;
         @include mq (tablet){
         width: 100%;
+        margin-bottom: 50px;
+        }
+        @include mq (desktop) {
+        margin-bottom: 80px;
         }
     }
 
@@ -68,7 +73,6 @@
 
 
     &__title {
-        margin-bottom: 32px;
         font-family: 'Titan One', sans-serif;
         font-weight: 400;
         font-size: 34px;
@@ -81,14 +85,12 @@
         @include mq (tablet){
         font-size: 48px;
         line-height: 55px;
-        margin-bottom: 50px;
         }
 
         @include mq (desktop){
         font-size: 58px;
         line-height: 66px;
         letter-spacing: 0.06em;
-        margin-bottom: 80px;
         }  
     }
 
