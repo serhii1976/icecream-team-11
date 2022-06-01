@@ -6,9 +6,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 140px;
-  width: 200px;
-  height: 36px;
+  padding-bottom: 140px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -17,6 +15,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $red;
+
+  @include mq(tablet){ 
+    font-size: 48px;
+}
+
+@include mq(desktop){ 
+    font-size: 58px;
+    padding-bottom: 261px;
+}
+
+
 }
 
 .products__label {
@@ -24,8 +33,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  width: 142px;
-  height: 21px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
@@ -33,6 +40,28 @@
   text-align: center;
   text-transform: uppercase;
   color: $pink;
+  
+  @include mq(tablet){ 
+    font-size: 26px;
+    line-height: 1.53;
+}
+
+@include mq(desktop){ 
+    font-size: 30px;
+    line-height: 1.13;
+}
+  
+}
+
+.products__list{
+    @include mq(tablet){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    
 }
 
 .products__item {
@@ -40,6 +69,17 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include mq(tablet){
+    margin-right: 16px;
+    margin-bottom: 0;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+@include mq(desktop){ 
+    margin-right: 32px;
+}
 }
 
 .products__wrapper {
@@ -50,6 +90,15 @@
   width: 280px;
   height: 489px;
   border-radius: 24px;
+
+  @include mq(tablet){ 
+    width: 224px;
+    height: 473px;
+}
+@include mq(desktop){ 
+    width: 395px;
+    height: 535px;
+}
 }
 
 .products__wrapper--fist {
@@ -70,39 +119,102 @@
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  top: -140px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
+
+  @include mq(tablet){ 
+    width: 224px;
+    height: 224px;
+    }
+    @include mq(desktop){ 
+    width: 394px;
+    height: 394px;
+    top: -255px;
+    }
+
 }
 
 .products__wrapper--fist::before {
   content: '';
-  top: -140px;
-  background-image: url(../images/icecream-mobile.png),
-    url(../images/icecream-mobile@x2.png);
+  
+  background-image: url(../images/icecream-mobile.png);
+    @include mq(retina){
+        background-image: url(../images/icecream-mobile@x2.png);
+    }
+
+    @include mq(tablet){ 
+        background-image: url(../images/icecream-tablet.png);
+        @include mq(retina){
+            background-image: url(../images/icecream-tablet@x2.png);
+        }
+        
+    }
+
+    @include mq(desktop){ 
+        background-image: url(../images/icecream-desktop.png);
+        @include mq(retina){
+            background-image: url(../images/icecream-desktop@x2.png);
+        }
+        
+    }
+    
 }
 
 .products__wrapper--second::before {
   content: '';
-  background-image: url(../images/icecoffee-mobile.png),
-    url(../images/icecoffee-mobile@x2.png);
-  top: -140px;
+  background-image: url(../images/icecoffee-mobile.png);
+  @include mq(retina){
+    background-image: url(../images/icecoffee-mobile@x2.png);
+    }
+    @include mq(tablet){ 
+    background-image: url(../images/icecoffee-tablet.png);
+    @include mq(retina){
+        background-image: url(../images/icecoffee-tablet@x2.png);
+    }
+    
+    }
+    @include mq(desktop){ 
+    background-image: url(../images/icecoffee-desktop.png);
+    @include mq(retina){
+        background-image: url(../images/icecoffee-desktop@x2.png);
+    }
+    
+}
+ 
 }
 
 .products__wrapper--third::before {
-  content: '';
-  background-image: url(../images/milkshake-mobile.png),
-    url(../images/milkshake-mobile@x2.png);
-  top: -140px;
+    content: '';
+    background-image: url(../images/milkshake-mobile.png);
+    @include mq(retina){
+      background-image: url(../images/milkshake-mobile@x2.png);
+    }
+    
+    @include mq(tablet){ 
+        background-image: url(../images/milkshake-tablet.png);
+        @include mq(retina){
+            background-image: url(../images/milkshake-tablet@x2.png);
+        }
+    }
+    
+     @include mq(desktop){ 
+         background-image: url(../images/milkshake-desktop.png);
+        @include mq(retina){
+            background-image: url(../images/milkshake-desktop@x2.png);
+            }
+    }
+
 }
 
 .products__subtitle {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   width: 174px;
   height: 23px;
   font-family: 'Titan One';
@@ -114,25 +226,30 @@
   text-transform: uppercase;
   color: $white;
   padding-top: 160px;
+
+  @include mq(tablet){ 
+    padding-top: 118px;
+}
+    @include mq(desktop){ 
+        padding-top: 165px;
+}
 }
 
 .products__subtitle::after {
   content: '';
-  width: 6px;
-  height: 6px;
-//   position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 32px;
+  background-image: url('../images/icon/dots_group.svg');
   
-  background-image: url(../images/icon/svg-all.svg#icon-elipse);
-  background-color: $whiteBtnHoverBackG;
-  border-radius: 50%;
+  display: block;
+  width: 26px;
+  height: 6px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
+
 }
 
 .products__about {
-  width: 200px;
+  width: 200px; 
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -144,16 +261,20 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $white;
+
+  @include mq(tablet){ 
+    width: 160px;
+    }
+
+  @include mq(desktop){ 
+        width: 265px;
+        margin-bottom: 60px;
+    }
+
 }
 
 
-.product__wrapper--desc{
-    fill: $redBtnHoverBackG;
-    &:hover,
-    &:focus{
-        fill: $whiteBtnHoverBackG;
-        }
-}
+
 
 .products__description {
   width: 40px;
@@ -163,15 +284,16 @@
   margin-right: auto;
   border: transparent;
   border-radius: 50%;
-}
-
-.products__description{
-    background-color: $whiteBtnHoverBackG;
+  cursor: pointer;
+  background-color: $whiteBtnHoverBackG;
+  color: $redBtnHoverBackG;
     &:hover,
     &:focus{
-        background-color: $redBtnHoverBackG;
-        }
+        background-color: $greyBackG;
+    }
 }
+
+
 
 
 .products__btn-icon {
@@ -181,5 +303,5 @@
   align-items: center;
   width: 12px;
   height: 10px;
-
+  fill: currentColor;
 }

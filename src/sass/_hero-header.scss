@@ -46,13 +46,13 @@
   background-color: $pink;
   z-index: 1;
 
-  animation: animationCircle;
-  animation-iteration-count: 1;
-  animation-timing-function: $cubic;
-  animation-direction: reverse;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
+    animation: animationCircle;
+    animation-iteration-count: 1;
+    animation-timing-function: $cubic;
+    animation-direction: reverse;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 
   @media screen and (min-width: 768px) {
     top: 43px;
@@ -75,13 +75,13 @@
   position: relative;
   z-index: 2;
 
-  animation: animationIcecream;
-  animation-iteration-count: 1;
-  animation-timing-function: $cubic;
-  animation-direction: reverse;
-  animation-delay: 0;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
+    animation: animationIcecream;
+    animation-iteration-count: 1;
+    animation-timing-function: $cubic;
+    animation-direction: reverse;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
 
   background-repeat: no-repeat;
 
@@ -376,20 +376,18 @@
 
 // animation
 
-@media screen and (max-width: 767px) {
-  @keyframes animationCircle {
-    0% {
-      top: 73px;
-      left: 36px;
-      transform: scale(1);
-    }
-    100% {
-      top: -345px;
-      left: 36px;
-      transform: scale(0.3);
-    }
+@keyframes animationCircle {
+  0% {    
+    transform: scale(1.0);
+    background-color: $pink;   
   }
+  100% {    
+    transform: scale(0.1);
+    background-color: $pinkBackG;
+  }
+}
 
+@media screen and (max-width: 767px) {  
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 117px;
@@ -402,19 +400,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  @keyframes animationCircle {
-    0% {
-      top: 43px;
-      left: 248px;
-      transform: scale(1);
-    }
-    100% {
-      top: -335px;
-      left: 248px;
-      transform: scale(0.3);
-    }
-  }
-
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 332px, bottom 16px left 32px,
@@ -428,20 +413,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  @keyframes animationCircle {
-    0% {
-      top: 54px;
-      left: 517px;
-      transform: scale(1);
-    }
-    100% {
-      top: -534px;
-      left: 517px;
-      transform: scale(0.3);
-    }
-  }
-
+@media screen and (min-width: 1280px) {  
   @keyframes animationIcecream {
     0% {
       background-position: bottom 0 left 636px, bottom 60px left 16px,
