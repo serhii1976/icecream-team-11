@@ -3,7 +3,7 @@
 }
 
 .footer-section {
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .footer-container {
@@ -20,46 +20,48 @@
   }
 }
 
-.footer-text {
-  font-family: 'Titan One';
-  font-weight: 400; 
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  @include tablet {
-    font-size: 26px;
-    line-height: 1.15;
-  }
-  @include desktop {
-    font-size: 30px;
-    line-height: 1.13;
-    br {
-      content: '';
-    }
-  }
-}
+// .footer-text {
+//   font-family: 'Titan One';
+//   font-weight: 400; 
+//   font-size: 18px;
+//   line-height: 1.16;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: #ffa5ba;
+//   @include tablet {
+//     font-size: 26px;
+//     line-height: 1.15;
+//   }
+//   @include desktop {
+//     font-size: 30px;
+//     line-height: 1.13;
+//     br {
+//       content: '';
+//     }
+//   }
+// }
 
-.footer-logo {
-  font-family: 'Titan One';
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-  @include tablet {
-    font-size: 48px;
-    letter-spacing: 0.06em;
-  }
-  @include desktop {
-    br {
-      content: '';
-    }
-    font-size: 58px;
-    line-height: 1.13;
-  }
+// .footer-logo {
+//   font-family: 'Titan One';
+//   font-weight: 700;
+//   font-size: 34px;
+//   line-height: 1.14;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: #d41443;
+//   @include tablet {
+//     font-size: 48px;
+//     letter-spacing: 0.06em;
+//   }
+//   @include desktop {
+//     br {
+//       content: '';
+//     }
+//     font-size: 58px;
+//     line-height: 1.13;
+//   }
+.box-two {
+  margin-bottom: 40px;
 }
 
 .contacts-footer {
@@ -72,7 +74,6 @@
   line-height: 186%;
   text-align: right;
   color: #000;
-  margin-bottom: 40px;
   &__tel {
     color: #d82f58;
   }
@@ -85,21 +86,64 @@
   }
 }
 
-.footer-list {
-  margin-bottom: 16px;
-  &:last-child {
-    margin-bottom: 40px;
-  }
-  a {
-    text-decoration: none;
-  }
-  @include tablet {
-    margin-bottom: 12px;
-  }
+.box-one {
+  margin-bottom: 40px;
   @include desktop {
+    margin-bottom: 60px;
+  }
+  &__list {
     margin-bottom: 16px;
     &:last-child {
-      margin-bottom: 60px;
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    @include tablet {
+      margin-bottom: 12px;
+    }
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.13;
+      br {
+        content: '';
+      }
+    }
+  }
+  &__logo {
+    font-family: 'Titan One';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    @include tablet {
+      font-size: 48px;
+      letter-spacing: 0.06em;
+    }
+    @include desktop {
+      br {
+        content: '';
+      }
+      font-size: 58px;
+      line-height: 1.13;
     }
   }
 }
@@ -107,17 +151,17 @@
 .socials-footer {
   display: flex;
   justify-content: right;
+  margin-bottom: 40px;
+  @include desktop {
+    margin-top: 12px;
+  }
   &__item {
     margin-right: 28.24px;
-    margin-bottom: 40px;
     &:last-child {
       margin-right: 0;
     }
     @include tablet {
       margin-right: 30px;
-    }
-    @include desktop {
-      margin-top: 12px;
     }
   }
 }
